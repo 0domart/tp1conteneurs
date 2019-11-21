@@ -1,0 +1,21 @@
+package fr.univamu.iut.exo2;
+
+import java.util.HashMap;
+
+public class GestionDistances {
+
+    private static HashMap<String, Integer> listeVillesDistances = new HashMap<String, Integer>() {
+        {
+            listeVillesDistances.put("Barcelone", 183);
+            listeVillesDistances.put("Valence", 337);
+            listeVillesDistances.put("Alicante", 399);
+            listeVillesDistances.put("Malaga", 599);
+        }};
+
+    public static Integer getDistance(String dest) {
+
+        return listeVillesDistances.get(dest);
+    }
+}
+
+
