@@ -1,0 +1,14 @@
+package fr.univamu.iut.exo2;
+
+import fr.univamu.iut.Conteneur;
+
+import java.util.Comparator;
+
+public class CompareDistances implements Comparator<Conteneur> {
+
+    public int compare(Conteneur a, Conteneur b) {
+        int distanceA = a.getDistance();
+        int distanceB = b.getDistance();
+        return distanceA - distanceB;
+    }
+}
